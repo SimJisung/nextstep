@@ -41,7 +41,7 @@
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>1.4.0</version>
 				<configuration>
-					<mainClass>src.main.java.main.WebServer</mainClass>
+					<mainClass>main.WebServer</mainClass>
 					<cleanupDaemonthreads>false</cleanupDaemonthreads>
 				</configuration>
 			</plugin>
