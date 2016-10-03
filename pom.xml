@@ -3,9 +3,8 @@
   <groupId>com</groupId>
   <artifactId>webserver.main</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-	
-  
-  <dependencies>
+   
+   <dependencies>
   	<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
 		<dependency>
 		    <groupId>org.slf4j</groupId>
@@ -34,6 +33,16 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.3.2</version>
+				<configuration>
+					<mainClass>com.webserver.main.main.WebServer</mainClass>
+					<cleanupDaemonthreads>false</cleanupDaemonthreads>
 				</configuration>
 			</plugin>
 		</plugins>
